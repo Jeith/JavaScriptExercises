@@ -1,0 +1,34 @@
+body{
+    background-color: #E4E5D7;
+}
+
+#table{
+    width: 98vw;
+    height: 97    <link rel="stylesheet" href="style.css">vh;
+    margin: .5vh .5vw .5vh .5vw;
+    background-color: #006C00;
+    padding-bottom: 200px;
+}
+
+.hand{
+    width: 70vw;
+    height: 150px;
+    background-color: #FFD16D;
+    margin-left:15vw;
+    margin-top: 50px;
+}
+
+.player{
+    margin-left: 15vw;
+    margin-top: 40px;
+}
+
+.dealer{
+    margin-left: 15vw;
+    margin-top: 40px;
+}
+
+.buttons{
+    margin-top: 20px;
+    margin-left: 45%;
+}
