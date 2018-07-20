@@ -22,15 +22,16 @@ console.log(squaredNums);
 
 var cities = [ { name: 'Los Angeles', temperature: 60.0}, { name: 'Atlanta', temperature: 52.0 }, { name: 'Detroit', temperature: 48.0 }, { name: 'New York', temperature: 80.0 } ];
 var coolCities = cities.filter(function(element){
-    return Object.values(cities) < 70;
+    if (element.temperature < 70){
+        return element;
+    }
 });
 console.log(coolCities);
 
 
-function cities2(){
-
-}
-cities2();
+var newArr = arr.map(function(element){
+    return element["name"];
+}) 
 
 
 var people = [ 'Dom', 'Lyn', 'Kirk', 'Autumn', 'Trista', 'Jesslyn', 'Kevin', 'John', 'Eli', 'Juan', 'Robert', 'Keyur', 'Jason', 'Che', 'Ben' ];
