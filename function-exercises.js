@@ -54,7 +54,7 @@ console.log(people);
 
 var arr = [ [1, 3, 4], [2, 4, 6, 8], [3, 6] ];
 
-var sumArray = arr1.map(function(element){
+var sumArray = arr.map(function(element){
     var sum = 0;
     for(var i = 0; i < element.length; i++){
         sum = sum + element[i]
@@ -99,7 +99,6 @@ function acro() {
         splitword = acronym[word]
         splitLetter = splitword.split('') 
         joinarr.push(splitLetter[0])
-        
     }
     console.log(joinarr.join(''))
 }
