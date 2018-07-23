@@ -9,7 +9,7 @@ function buildPage(){
     var img = document.createElement('img');
     img.setAttribute('style', "height: 98%; width:60%; margin-left: 5px; margin-top: -48%; position: absolute;");
     var comment = document.createElement('div');
-    comment.setAttribute('style', "height: 98%; width: 30%; margin-left: 65%; position:relative;")
+    comment.setAttribute('style', "height: 98%; width: 30%; margin-left: 65%; position:relative;");
     div.appendChild(comment);
     var userdiv = document.createElement('div');
     userdiv.setAttribute("style", "height: 30%; position: relative;")

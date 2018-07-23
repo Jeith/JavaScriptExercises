@@ -29,9 +29,9 @@ var coolCities = cities.filter(function(element){
 console.log(coolCities);
 
 
-var newArr = arr.map(function(element){
-    return element["name"];
-}) 
+cities.forEach(function(element){
+    console.log(element.name);
+})
 
 
 var people = [ 'Dom', 'Lyn', 'Kirk', 'Autumn', 'Trista', 'Jesslyn', 'Kevin', 'John', 'Eli', 'Juan', 'Robert', 'Keyur', 'Jason', 'Che', 'Ben' ];
@@ -40,22 +40,27 @@ people.forEach(function(element){
 });
 
 
-function arraySort1(){
-
-}
-arraySort1();
+people.sort(function(a, b){
+    return a <= b;
+})
 
 
 var people = [ 'Dom', 'Lyn', 'Kirk', 'Autumn', 'Trista', 'Jesslyn', 'Kevin', 'John', 'Eli', 'Juan', 'Robert', 'Keyur', 'Jason', 'Che', 'Ben' ];
-people.forEach(function(element){
-    if element.length >
+people.sort(function(a, b){
+    return b.length - a.length;
+});
+console.log(people);
 
 
-function arraySort3(){
+var arr = [ [1, 3, 4], [2, 4, 6, 8], [3, 6] ];
 
-
-}
-arraySort3();
+var sumArray = arr1.map(function(element){
+    var sum = 0;
+    for(var i = 0; i < element.length; i++){
+        sum = sum + element[i]
+    }
+    return sum
+})
 
 
 function call3Times(fun) { 
@@ -85,8 +90,18 @@ var sum = nums.reduce((total, amount) => total + amount);
 console.log(sum);
 
 
-function acronym(){
+var acronym = ['very', 'important', 'person'];
+var splitarr = [];
+var joinarr = [];
 
+function acro() {
+    for(word in acronym) {
+        splitword = acronym[word]
+        splitLetter = splitword.split('') 
+        joinarr.push(splitLetter[0])
+        
+    }
+    console.log(joinarr.join(''))
 }
-acronym();
+console.log(acro());
 
