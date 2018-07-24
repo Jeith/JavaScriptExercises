@@ -89,12 +89,7 @@ function buildPage(){
             alert("player busted");
             var playAgain = prompt("Play again?(Y or N)");
             if (playAgain == "Y"){
-                calcPlayerPoints() = 0;
-                calcDealerPoints() = 0;
-                playerScore() = 0;
-                dealerScore() = 0;
-                playerCards = [];
-                playerhand = [];
+
             } else {
                 alert("Bye!");
             }
