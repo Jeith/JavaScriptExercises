@@ -35,10 +35,11 @@ class Person{
         }, 2000);
     }
     createGreetingsForFriends(){
+        var x = [];
         var x = this.friends.map(function(element){
-            return 'Yo ' + element.name + '! from ' + this.name + '.';
+            return 'Yo ' + element.name + '! from ' + this.name + '.'
         });
-        console.log(x);
+        console.log(x)
     }
 }
 var alfie = new Person('Alfie');
