@@ -1,0 +1,24 @@
+body{
+    background: url('http://getwallpapers.com/wallpaper/full/6/a/1/47229.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0 0 0 0;
+}
+
+#leftdiv{
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+#chardiv{
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    list-style-type: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

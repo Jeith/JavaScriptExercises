@@ -39,12 +39,28 @@
 
         var name = response.name;
 
+        var img = document.createElement('img')
+        var imgarea = document.getElementById("imgarea");
+
         var degFInt = Math.floor(degF);
         console.log(degFInt);
-            var $cityName = $('#cityname');
-            $cityName.append("<h4>" + name + "</h4>")
-            var $weatherBox = $('#weather');
-            $weatherBox.append("<p>" + degCInt + '&#176; C / ' + degFInt + '&#176; F</p><p>' + humidity + "%</p><p>" + condition + "</p>");
+            var cityName = document.getElementById('cityname');
+            cityName.innerHTML = "<h4>" + name + "</h4>"
+            var weatherBox = document.getElementById('weather');
+            weatherBox.innerHTML = "<p>" + degCInt + '&#176; C / ' + degFInt + '&#176; F</p><p>' + humidity + "%</p><p>" + condition + "</p>";
+            if (condition == "Thunderstorm"){
+                imgarea.innerHTML = "<img src=images/storm.jpg>";
+            } else if (condition == "Clouds"){
+                imgarea.innerHTML = "<img src=images/cloud.jpg>";
+            } else if (condition == "Rain"){
+                imgarea.innerHTML = "<img src=images/rain.jpg>";
+            } else if (condition == "Drizzle"){
+                imgarea.innerHTML = "<img src=images/drizzle.jpg>";
+            } else if (condition == "Mist" || condition == "Fog"){
+                imgarea.innerHTML = "<img src=images/mist.jpg>";
+            } else if (condition == "Clear"){
+                imgarea.innerHTML = "<img src=images/clear.jpg>";
+            }
     }
     function updateUIError(){
         var $weatherBox = $('#weather');
